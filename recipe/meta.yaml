@@ -10,7 +10,7 @@ source:
   sha256: ba0cfaa1ff6ead2b15c62a67292de66a366f9b815a09697b54677f7e15f5a2b2
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
 test:
   commands:
     - echo "foo" | ts
-    - sponge -h
+    - sponge -h  # [build_platform == target_platform]
 
 about:
   home: https://joeyh.name/code/moreutils/

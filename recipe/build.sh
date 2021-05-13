@@ -12,4 +12,4 @@ for f in vipe ts vidir zrun chronic; do
 done
 
 make PREFIX=$PREFIX CC=$CC
-make install PREFIX=$PREFIX CC=$CC
+make install PREFIX=$PREFIX CC=$CC INSTALL_BIN=install
