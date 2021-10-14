@@ -1,5 +1,5 @@
 {% set name = "moreutils" %}
-{% set version = "0.66" %}
+{% set version = "0.65" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://deb.debian.org/debian/pool/main/m/{{ name }}/{{ name }}_{{ version }}.orig.tar.xz
-  sha256: a8d4633e18731bdeebbb56a055c9f636a288445df96df5773742d64ffc1a69be
+  sha256: ba0cfaa1ff6ead2b15c62a67292de66a366f9b815a09697b54677f7e15f5a2b2
 
 build:
   number: 1
