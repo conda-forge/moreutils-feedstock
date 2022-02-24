@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://deb.debian.org/debian/pool/main/m/{{ name }}/{{ name }}_{{ version }}.orig.tar.xz
+  url: https://deb.debian.org/debian/pool/main/m/{{ name }}/{{ name }}_{{ version }}.orig.tar.gz
   sha256: dc079e018aaff22446cf36eccb298627bb0222ec6dc23a173860c9e1f16e214d
 
 build:
