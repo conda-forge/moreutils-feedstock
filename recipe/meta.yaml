@@ -1,5 +1,5 @@
 {% set name = "moreutils" %}
-{% set version = "0.66" %}
+{% set version = "0.67" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://deb.debian.org/debian/pool/main/m/{{ name }}/{{ name }}_{{ version }}.orig.tar.gz
-  sha256: dc079e018aaff22446cf36eccb298627bb0222ec6dc23a173860c9e1f16e214d
+  sha256: 03872f42c22943b21c62f711b693c422a4b8df9d1b8b2872ef9a34bd5d13ad10
 
 build:
   number: 0
@@ -31,7 +31,7 @@ about:
   license: GPL-2.0-only
   license_family: GPL
   license_file: COPYING
-  summary: 'Collection of additional unix tools.'
+  summary: Collection of additional unix tools.
   description: |
     moreutils is a growing collection of the unix tools that nobody thought to
     write long ago when unix was young.
