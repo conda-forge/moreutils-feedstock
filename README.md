@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/moreutils-feeds
 
 Summary: Collection of additional unix tools.
 
+Development: https://git.joeyh.name/index.cgi/moreutils.git/
+
 moreutils is a growing collection of the unix tools that nobody thought to
 write long ago when unix was young.
 
