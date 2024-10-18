@@ -10,7 +10,7 @@ source:
   sha256: 03872f42c22943b21c62f711b693c422a4b8df9d1b8b2872ef9a34bd5d13ad10
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -20,9 +20,11 @@ requirements:
 
   run:
     - perl
+    - perl-ipc-run
 
 test:
   commands:
+    - chronic echo "Hello world"
     - echo "foo" | ts
     - sponge -h  # [build_platform == target_platform]
 
