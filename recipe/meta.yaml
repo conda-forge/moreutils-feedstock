@@ -10,21 +10,30 @@ source:
   sha256: 03872f42c22943b21c62f711b693c422a4b8df9d1b8b2872ef9a34bd5d13ad10
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
 
   run:
     - perl
+    - perl-ipc-run
 
 test:
   commands:
-    - echo "foo" | ts
+    - combine -h
+    - chronic echo "Hello world"
+    - errno -h
+    - isutf8 -i recipe/meta.yaml
+    - lckdo echo.lock echo "Solo execution via lock file"
+    - mispipe 'echo "Success"' 'grep Error'
     - sponge -h  # [build_platform == target_platform]
+    - echo "Hello world time stamped" | ts
+    - zrun -h
 
 about:
   home: https://joeyh.name/code/moreutils/
