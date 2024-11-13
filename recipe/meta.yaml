@@ -1,13 +1,13 @@
 {% set name = "moreutils" %}
-{% set version = "0.67" %}
+{% set version = "0.69" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://deb.debian.org/debian/pool/main/m/{{ name }}/{{ name }}_{{ version }}.orig.tar.gz
-  sha256: 03872f42c22943b21c62f711b693c422a4b8df9d1b8b2872ef9a34bd5d13ad10
+  url: https://deb.debian.org/debian/pool/main/m/{{ name }}/{{ name }}_{{ version }}.orig.tar.xz
+  sha256: 2170c46219ce8d6f17702321534769dfbfece52148a78cd12ea73b5d3a72ff7c
 
 build:
   number: 0
@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - make
 
   run:
@@ -41,3 +42,4 @@ extra:
   recipe-maintainers:
     - matthiasdiener
     - notestaff
+    - seowalex
