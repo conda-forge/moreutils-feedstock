@@ -1,5 +1,5 @@
 {% set name = "moreutils" %}
-{% set version = "0.69" %}
+{% set version = "0.70" %}
 
 package:
   name: {{ name|lower }}
