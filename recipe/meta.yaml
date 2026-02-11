@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://deb.debian.org/debian/pool/main/m/{{ name }}/{{ name }}_{{ version }}.orig.tar.xz
+  url: https://git.joeyh.name/index.cgi/moreutils.git/snapshot/moreutils-{{ version }}.tar.gz
   sha256: 2170c46219ce8d6f17702321534769dfbfece52148a78cd12ea73b5d3a72ff7c
 
 build:
