@@ -1,13 +1,13 @@
 {% set name = "moreutils" %}
-{% set version = "0.69" %}
+{% set version = "0.70" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://deb.debian.org/debian/pool/main/m/{{ name }}/{{ name }}_{{ version }}.orig.tar.xz
-  sha256: 2170c46219ce8d6f17702321534769dfbfece52148a78cd12ea73b5d3a72ff7c
+  url: https://git.joeyh.name/index.cgi/moreutils.git/snapshot/moreutils-{{ version }}.tar.gz
+  sha256: f2bf46d410ba567cc8d01507e94916994e48742722e690dc498fab59f5250132
 
 build:
   number: 0
